@@ -21,7 +21,7 @@ class DishDetails extends Component {
                     </p>
                 </li>
             )
-        })
+        });
         return (
             <div className='col-12 col-md-5 m-1'>
                 <h4> Comments </h4>
@@ -30,10 +30,11 @@ class DishDetails extends Component {
                 </ul>
 
             </div>
-        )
+        );
     }
 
     renderDish(dish) {
+     //    console.log(dish);
         if (dish != null) {
             return (
                 <div className='col-12 col-md-5 m-1'>

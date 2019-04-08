@@ -16,22 +16,6 @@ class Menu extends Component{
     };
 
 
-    renderDish = dish=> {
-        if (dish != null)
-            return(
-                <Card>
-                    <CardImg top src={dish.image} alt={dish.name} />
-                    <CardBody>
-                        <CardTitle>{dish.name}</CardTitle>
-                        <CardText>{dish.description}</CardText>
-                    </CardBody>
-                </Card>
-            );
-        else
-            return(
-                <div></div>
-            );
-    }
 
     render() {
        // console.log(this.state.selectedDish);
@@ -46,7 +30,7 @@ class Menu extends Component{
                     </Card>
                 </div>
             );
-        })
+        });
         return (
             <div className='container'>
                 <div className='row'>
