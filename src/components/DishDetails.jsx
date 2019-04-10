@@ -34,7 +34,6 @@ class DishDetails extends Component {
     }
 
     renderDish(dish) {
-     //    console.log(dish);
         if (dish != null) {
             return (
                 <div className='col-12 col-md-5 m-1'>
